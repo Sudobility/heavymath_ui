@@ -13,12 +13,7 @@ export type {
 
 /** String-based market status values matching the indexer API responses */
 export type MarketStatusString =
-  | 'Active'
-  | 'Locked'
-  | 'Resolved'
-  | 'Cancelled'
-  | 'Abandoned'
-  | 'Refunded';
+  'Active' | 'Locked' | 'Resolved' | 'Cancelled' | 'Abandoned' | 'Refunded';
 
 /**
  * Numeric market status values matching the smart contract.
@@ -60,10 +55,7 @@ export function statusStringToNumber(status: MarketStatusString): MarketStatus {
 
 /** Sort options for the market list view */
 export type MarketSortOption =
-  | 'newest'
-  | 'deadline'
-  | 'poolSize'
-  | 'mostActive';
+  'newest' | 'deadline' | 'poolSize' | 'mostActive';
 
 /**
  * Data required to create a new prediction market via the smart contract.

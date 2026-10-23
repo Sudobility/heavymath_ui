@@ -571,12 +571,7 @@ export function InlineCreateMarketForm({
                           scoreType: Number(scoreType) as 0 | 1,
                           team: Number(scoreSide) as 0 | 1,
                           operator: Number(scoreOperator) as
-                            | 0
-                            | 1
-                            | 2
-                            | 3
-                            | 4
-                            | 5,
+                            0 | 1 | 2 | 3 | 4 | 5,
                           expectation: Number(scoreExpectation),
                         },
                         { home: homeTeamName, away: awayTeamName }
